@@ -17,7 +17,7 @@ word-analogy : word-analogy.c
 	$(CC) word-analogy.c -o ${BIN_DIR}/word-analogy $(CFLAGS)
 compute-accuracy : compute-accuracy.c
 	$(CC) compute-accuracy.c -o ${BIN_DIR}/compute-accuracy $(CFLAGS)
-	chmod +x ${SCRIPTS_DIR}/*.sh
+	chmod -R +x ${SCRIPTS_DIR}/*
 
 clean:
 	pushd ${BIN_DIR} && rm -rf word2vec word2phrase distance word-analogy compute-accuracy; popd
