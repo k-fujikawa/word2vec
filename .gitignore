@@ -1,7 +1,3 @@
-data/classes/*
-data/corpus/*
-data/phrases/*
-data/vectors/*
 bin/*
 src/compute-accuracy
 src/distance
